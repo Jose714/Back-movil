@@ -7,13 +7,15 @@ const mysql = require('mysql');
 
 //configuracion base de datos
 const db = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'Hidarmes.2019',
+  host: 'us-cdbr-east-02.cleardb.com',
+  user: 'b39fc7edaf1a3d',
+  password: 'ef57ae14',
   port: 3306,
-  database: 'recetas'
+  database: 'heroku_8c3b0b07f25d6e5'
 
 })
+
+//:@us-cdbr-east-02.cleardb.com/heroku_8c3b0b07f25d6e5?reconnect=true
 app.use(cors());
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
